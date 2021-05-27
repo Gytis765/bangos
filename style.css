@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 200vh;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(jura.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+.banga{
+    width: 100%;
+    height: 140px;
+    background-image: url(banga.png);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.banga1{
+    animation-name: bangavimas;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes bangavimas{
+    0%{background-position: 0;}
+    100%{background-position: 1360px;}
+}
+.banga2{
+    opacity: 0.5;
+    animation-name: bangavimas2;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 5s;
+}
+@keyframes bangavimas2{
+    0%{background-position: 0;}
+    100%{background-position: -1360px;}
+}
+.banga3{
+  opacity: 0.2;  
+    animation-name: bangavimas;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: -10s;
+}
+.banga4{
+    opacity: 0.7;
+    animation-name: bangavimas;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: -15s;
+}
+h1{
+    color: black;
+    font-size: 100px;
+    animation-name: pavadinimas;
+    animation-duration: 3s;
+    position: relative;
+    animation-direction: reverse;
+}
+@keyframes pavadinimas{
+    0%{
+        left: 0;
+        top: 0;
+    }
+    100%{
+        top: 0;
+        left: -1000px;
+    }
+}
